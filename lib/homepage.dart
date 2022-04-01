@@ -67,17 +67,20 @@ class _homepageState extends State<homepage> {
               SizedBox(
                 height: 8.0,
               ),
-              TextField(
-                keyboardType: TextInputType.number,
-                controller: heightController,
-                textAlign: TextAlign.center,
-                decoration: InputDecoration(
-                  hintText: "Enter Height",
-                  filled: true,
-                  fillColor: Colors.grey,
-                  border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(8.0),
-                    borderSide: BorderSide.none,
+              Container(
+                margin: EdgeInsets.fromLTRB(30, 10, 30, 10),
+                child: TextField(
+                  keyboardType: TextInputType.number,
+                  controller: heightController,
+                  textAlign: TextAlign.center,
+                  decoration: InputDecoration(
+                    hintText: "Enter Height",
+                    filled: true,
+                    fillColor: Colors.grey,
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(8.0),
+                      borderSide: BorderSide.none,
+                    ),
                   ),
                 ),
               ),
@@ -94,25 +97,31 @@ class _homepageState extends State<homepage> {
               SizedBox(
                 height: 10.0,
               ),
-                TextField(
-                keyboardType: TextInputType.number,
-                controller: weightController,
-                textAlign: TextAlign.center,
-                decoration:
-                InputDecoration(
-                  hintText: "Enter Weight",
-                  filled: true,
-                  fillColor: Colors.grey,
-                  border: OutlineInputBorder(
 
-                    borderRadius: BorderRadius.circular(8.0),
-                    borderSide: BorderSide.none,
+                Container(
+                  margin: EdgeInsets.fromLTRB(30, 10, 30, 10),
+                  // width: 200.0,
+                  child: TextField(
+                  keyboardType: TextInputType.number,
+                  controller: weightController,
+                  textAlign: TextAlign.center,
+                  decoration:
+                  InputDecoration(
+                    hintText: "Enter Weight",
+                    filled: true,
+                    fillColor: Colors.grey,
+                    border: OutlineInputBorder(
+
+                      borderRadius: BorderRadius.circular(8.0),
+                      borderSide: BorderSide.none,
+                    ),
+
                   ),
-
-                ),
               ),
+                ),
               SizedBox(height: 30.0,),
               Container(
+                margin: EdgeInsets.fromLTRB(10, 10, 10, 10),
                 child: FlatButton(
                   minWidth: double.infinity,
                   height: 60.0,
